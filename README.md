@@ -1,2 +1,0 @@
-# ideasmaker
-ideasmaker site
