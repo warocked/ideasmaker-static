@@ -26,8 +26,6 @@
                <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.webp">
                <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.webp">
                <link rel="apple-touch-icon" href="images/apple-touch-icon.webp">               
-
-               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
                <link href="css/app.css" rel="stylesheet">
             </head>
             <body>
@@ -488,6 +486,13 @@
                       var link = document.createElement('link');
                       link.rel = "stylesheet";
                       link.href = "//fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,400italic,300italic,300,100italic,100&display=swap";
+                      document.querySelector("head").appendChild(link);
+                  })();
+                  
+                  (function() {
+                      var link = document.createElement('link');
+                      link.rel = "stylesheet";
+                      link.href = "//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
                       document.querySelector("head").appendChild(link);
                   })();
                </script>
