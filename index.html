@@ -17,13 +17,18 @@
                <meta name="author" content="ideasmaker">
                <meta name="keywords" content="responsive, html5, web development, seo, multimedia, online marketing, creative">
                <meta name="description" content="Ideasmaker.net is a full service multimedia, website and application development and online marketing agency who dedicate and creates stunning websites and multimedia projects all over the world and is headquartered in Davao, Philippines.">
-               <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-               <link href="css/app.css" rel="stylesheet">
+               <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=no">
+
+               <link rel="preload" href="css/app.css" as="style">
+
                <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
                <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-               <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-               <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-               <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+               <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.webp">
+               <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.webp">
+               <link rel="apple-touch-icon" href="images/apple-touch-icon.webp">               
+
+               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+               <link href="css/app.css" rel="stylesheet">
             </head>
             <body>
                <header id="header">
@@ -36,7 +41,7 @@
                            <span class="icon-bar"></span>
                            <span class="icon-bar"></span>
                            </button>
-                           <a class="navbar-brand" href="#ideasmaker"><img src="images/logo.png" alt="logo" role="banner"></a>
+                           <a class="navbar-brand" href="#ideasmaker"><img src="images/logo.webp" alt="ideasmaker logo" role="banner"></a>
                         </div>
                         <nav id="navigation-menu" class="collapse navbar-collapse" role="navigation">
                            <ul class="nav navbar-nav navbar-right">
@@ -55,7 +60,7 @@
                   <div class="container">
                      <div class="row" id="features-holder">
                         <div class="col-md-7" id="feat_image">
-                           <img alt="image" src="images/imac.png" class="img-responsive">
+                           <img alt="image" src="images/imac.webp" alt="ideasmaker computer icon" class="img-responsive">
                         </div>
                         <div class="col-md-5 titlebar vcenter" id="features-list">
                            <h1>
@@ -85,7 +90,7 @@
                            </p>
                         </div>
                         <div id="about-img" class="col-md-6 text-center">
-                           <img class="img-responsive" src="images/startup-1.png" alt="image" />
+                           <img class="img-responsive" src="images/startup-1.webp" alt="startup vector" />
                         </div>
                      </div>
                   </div>
@@ -449,10 +454,10 @@
                <div class="row">
                <div id="footer_nav" class="col-sm-6 col-md-4">
                <ul class="footer-nav clearfix">
-               <li><img src="images/Philippines-Flag.png" /> Buong kapurihan gawang pinoy!</li>
+               <li><img src="images/Philippines-Flag.webp" alt="Philippine Flag" /> Buong kapurihan gawang pinoy!</li>
                </ul>
                <div id="footer_copy">
-               <p>&copy; 2014 ideasmaker.net. All right reserved. </p>
+               <p>&copy; 2020 ideasmaker.net. All right reserved. </p>
                </div>
                </div> 
                <div class="col-md-offset-4 col-md-4">
@@ -468,10 +473,8 @@
                </div> 
                </footer> 
                </div> 
-               <script data-cfasync="false" src="js/email-decode.min.js"></script>
-               <script src="js/jquery-2.1.0.min.js" type="text/javascript"></script>
+               <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
                <script src="js/bootstrap.min.js" type="text/javascript"></script>
-               <script src="js/retina.min.js" type="text/javascript"></script>
                <script src="js/modernizr.custom.js" type="text/javascript"></script>
                <script src="js/jquery.easing.min.js" type="text/javascript"></script>
                <script src="js/jquery.parallax-1.1.3.min.js" type="text/javascript"></script>
@@ -484,7 +487,7 @@
                   (function() {
                       var link = document.createElement('link');
                       link.rel = "stylesheet";
-                      link.href = "//fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,400italic,300italic,300,100italic,100";
+                      link.href = "//fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,400italic,300italic,300,100italic,100&display=swap";
                       document.querySelector("head").appendChild(link);
                   })();
                </script>
