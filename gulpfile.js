@@ -3,7 +3,8 @@ var gulp = require('gulp'),
    concat = require('gulp-concat'),
    jshint = require('gulp-jshint'),
    autoprefixer = require('autoprefixer'),
-   minifyCSS = require('gulp-clean-css');
+   minifyCSS = require('gulp-clean-css'),
+   htmlmin = require('gulp-htmlmin');
 
 
 
@@ -22,13 +23,12 @@ gulp.task('build', async function () {
       .pipe(concat('app.min.js'))
       .pipe(gulp.dest('_static/js'));
 
+	gulp.src('_src/index.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('_static'));
+
 	gulp.src('_src/css/*.css')
     .pipe(minifyCSS())
-    // .pipe(
-    //   autoprefixer({
-    //     browsers: ["last 2 versions"]
-    //   })
-    // )
     .pipe(concat('app.min.css'))
     .pipe(gulp.dest('_static/css'));
 
