@@ -1,0 +1,18 @@
+{
+	"name": "IdeasMaker-Static",
+	"version": "1.0.0",
+	"description": "IdeasMaker Static website",
+	"main": "gulpfile.js",
+	"author": "ideasmaker",
+	"dependencies": {},
+	"devDependencies": {
+		"autoprefixer": "^10.0.4",
+		"gulp": "~4.0.2",
+		"gulp-concat": "~2.6.1",
+		"gulp-jshint": "^2.1.0",
+		"gulp-uglify": "^3.0.2",
+		"gulp-clean-css": "^4.3.0",
+		"jshint": "^2.12.0",
+		"postcss": "^8.1.0"
+	}
+}
